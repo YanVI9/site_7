@@ -1,9 +1,8 @@
 /* */
-body {
+body, h1 {
     margin: 0;
     padding: 0;
 }
-
 
 /* container */
 
@@ -17,4 +16,38 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+/* header */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3vh;
+    max-width: 1179px;
+    margin: 0 auto;
+}
+
+.header__flexblock {
+    display: flex;
+    align-items: center;
+}
+
+.header__caption {
+    color: white;
+    font-size: 34px;
+}
+
+.header__navItem_text {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.header__navItem_svg-first {
+    margin: 0 25px 0 60px;
+    text-decoration: none;
 }
