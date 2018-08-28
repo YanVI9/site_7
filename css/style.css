@@ -82,7 +82,8 @@ body, h1 {
 
 .section_w-fix {
     min-width: 1179px;
-
+    position: relative;
+    overflow: hidden;
 }
 
 .slider__arch {  /* стрелки головного слайдера */
@@ -109,6 +110,24 @@ body, h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slider__item_n-1 {
+    top: 0;
+    left: 0;
+}
+
+.slider__item_n-2 {
+    top: -100%;
+    left: 0;
+}
+
+.slider__item_n-3 {
+    top: -100%;
+    left: 0;
 }
 
 .slider__content {
