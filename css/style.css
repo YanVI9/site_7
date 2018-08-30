@@ -281,3 +281,53 @@ body, h1 {
 .services__item:hover .services__img_icon-4 {
     background-image: url('../img/icon4a.png');
 }
+
+/* browser__container */
+.section_bckg-grey {
+    background-color: #fbfaf8;
+}
+
+.browser__container {
+    min-width: 1179px;
+    margin: 0 auto;
+    padding-top: 80px;
+}
+
+.browser__images {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.browser__img_pos-left {
+    width: 770px;
+    margin-right: -540px;
+    position: relative;
+    z-index: 1;
+}
+
+.browser__img_pos-center {
+    width: 770px;
+    position: relative;
+    z-index: 2;
+}
+
+.browser__img_pos-right {
+    width: 770px;
+    margin-left: -540px;
+    position: relative;
+    z-index: 1;
+}
+
+.browser__header {
+    max-width: 770px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px; 
+}
+
+.browser__text {
+    max-width: 770px;
+    text-align: center;
+    margin: 0 auto 42px auto;
+}
