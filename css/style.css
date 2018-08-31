@@ -512,3 +512,23 @@ body, h1 {
     color: #c7b299;
     font-family: 'Myriad Pro';
 }
+
+/* Section Mobile Device */
+
+.mobileDevice {
+    min-width: 1179px;
+    min-height: 696px;
+    margin: 0 auto; 
+    background-image: url('../img/iPhoneinhand.png');
+    background-position: 50px bottom; 
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.mobileDevice__textbox {
+    flex-basis: 667px;
+    padding-right: 20px;
+}
+
