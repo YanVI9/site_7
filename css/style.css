@@ -723,4 +723,50 @@ body, h1 {
     margin-top: 20px;
     grid-template-columns: 1fr 1fr;
     grid-gap: 6px 10px;
+    overflow: hidden;
+}
+
+.gridBlock__img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* footer */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    height: 111px;
+    background-color: #111111;
+    color: #555555;
+    font-weight: 400;
+    font-size: 13px;
+    font-family: 'Myriad Pro';
+}
+
+.footer__assignText {
+    color: #959595;
+    transition: color 1s linear;
+}
+
+.footer__text {
+    margin-right: 10px;
+}
+
+.footer__link {
+    text-decoration: none;
+    color: #555555;
+    padding: 0 10px;
+    transition: color 1s linear;
+}
+
+.footer__link:hover,
+.footer__link:hover .footer__assignText {
+    color: #c7b299;
+}
+
+.footer__link_border-left {
+    border-left: 1px #555555 solid; 
 }
