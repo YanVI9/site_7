@@ -608,3 +608,119 @@ body, h1 {
 .clients__logo {
     margin: 0 45px;
 }
+
+/*prefooter предпоследний блок*/
+
+.prefooter {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    padding: 85px 0;
+    background-color: #191919;
+}
+
+.prefooter__block {
+    flex-basis: 270px;
+    margin: 0 15px;    
+}
+
+.prefooter__headet {
+    display: flex;
+    align-items: center;
+}
+
+.prefooter__caption {
+    color: white;
+    font-size: 34px;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+.prefooter__text {
+    font-size: 14px;
+    color: #555555;
+    line-height: 24px;
+    font-weight: bold;
+}
+
+.prefooter__link {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    padding-right: 20px;
+    background: url('../img/arrow.png') right center no-repeat;
+}
+
+.prefooter__caption-second {
+    font-family: 'Raleway';
+    font-size: 24px;
+    color: white;
+    line-height: 55px;
+    margin: 0;
+}
+
+.post__block {
+    padding: 12px 0;
+}
+
+.post__block:hover {
+    border-top: 1px #252525 solid;
+    border-bottom: 1px #252525 solid;
+    padding: 11px 0;
+}
+
+.post__block:hover .post__date {
+    color: white;
+}
+
+.post__block:hover .post__annotation {
+    color: #c7b299;
+}
+
+.post__date {
+    font-size: 12px;
+    color: #555555;
+    margin: 0 0 12px 0;
+    transition: color 1s linear;
+}
+
+.post__annotation {
+    font-size: 14px;
+    color: #555555;
+    line-height: 20px;
+    font-weight: bold;
+    margin: 0;
+    transition: color 1s linear;
+}
+
+.twitter__post {
+    font-size: 14px;
+    line-height: 20px;
+    color: #555555;
+    font-weight: bold;
+}
+
+.twitter__date {
+    color: #363636;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.twitter__assignText {
+    color: #00bff3;
+}
+
+.twitter__block_border-topbottom {
+    border-top: 1px #252525 solid;
+    border-bottom: 1px #252525 solid;
+}
+
+/* gridBlock */
+
+.gridBlock {
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 6px 10px;
+}
