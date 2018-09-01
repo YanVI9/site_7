@@ -592,4 +592,19 @@ body, h1 {
     font-size: 14px;
     margin: 0;
     text-transform: uppercase;
-}   
+}  
+
+/* clients */
+
+.clients {
+    min-height: 490px;
+    background: #362f2d url('../img/bg1.jpg') center no-repeat;
+    background-size: cover; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clients__logo {
+    margin: 0 45px;
+}
