@@ -733,17 +733,22 @@ body, h1 {
 
 /* footer */
 
-.footer {
+.footer {      
+    background-color: #111111;   
+}
+
+.cover {
     display: flex;
+    height: 111px;
     justify-content: space-between;
     align-items: center;
     padding: 0 10px;
-    height: 111px;
-    background-color: #111111;
     color: #555555;
     font-weight: 400;
     font-size: 13px;
     font-family: 'Myriad Pro';
+    margin: 0 auto;
+    max-width: 1179px;
 }
 
 .footer__assignText {
