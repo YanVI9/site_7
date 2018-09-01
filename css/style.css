@@ -516,7 +516,7 @@ body, h1 {
 /* Section Mobile Device */
 
 .mobileDevice {
-    min-width: 1179px;
+    max-width: 1179px;
     min-height: 696px;
     margin: 0 auto; 
     background-image: url('../img/iPhoneinhand.png');
@@ -553,3 +553,43 @@ body, h1 {
     line-height: 32px;
     padding-left: 50px;
 }
+
+/*result секция с результатом*/
+
+.result__section {
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.result__item {
+    margin: 0 35px;
+    flex-basis: 155px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.result__item::before {
+    content: "";
+    border-bottom: 2px white solid;
+    width: 30px;
+    position: absolute;
+    bottom: 0;
+    left: center;
+    
+}
+
+.result__count {
+    color: #ffffff;
+    font-size: 42px;
+    margin: 28px 0 18px 0;
+} 
+
+.result__object {
+    color: #bfaa92;
+    font-size: 14px;
+    margin: 0;
+    text-transform: uppercase;
+}   
