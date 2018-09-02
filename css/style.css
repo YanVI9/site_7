@@ -452,6 +452,23 @@ body, h1 {
     margin-left: 30px;
     margin-bottom: 15px;
     padding-top: 30px;
+    position: relative;
+    z-index: 3;
+}
+
+.grid__caption::after {
+    content: "";
+    width: 0; height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 11px solid #fbfaf8;
+    position: absolute;
+    top: -15px;
+    left: 15px;
+}
+
+.grid__item:hover .grid__caption::after{
+    border-bottom: 11px solid #362f2d;
 }
 
 .grid__text {
