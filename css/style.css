@@ -78,8 +78,7 @@ body, h1 {
 }
 
 .header__navItem_text:hover {
-    color: #c7b299;
-    
+    color: #c7b299;   
 }
 
 .header__navItem_svg {
