@@ -42,6 +42,8 @@ body, h1 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
 }
 
 /* header */
@@ -117,6 +119,15 @@ body, h1 {
 
 .section_bckg-grey {
     background-color: #fbfaf8;
+}
+
+/* slider */
+
+.slider__container {
+    background-color: rgba(250, 239, 136, 0.5);
+    width: 1179px;
+    flex: 1 0 auto;
+    align-self: center;
 }
 
 /* section__slider */
