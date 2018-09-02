@@ -48,10 +48,11 @@ body, h1 {
 
 .header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding-top: 3vh;
-    min-width: 1179px;
+    max-width: 1179px;
     margin: 0 auto;
 }
 
@@ -129,7 +130,7 @@ body, h1 {
 }
 
 .section_w-fix {
-    min-width: 1179px;
+    max-width: 1179px;
     position: relative;
     overflow: hidden;
 }
@@ -321,7 +322,7 @@ body, h1 {
 
 
 .browser__container {
-    min-width: 1179px;
+    max-width: 1179px;
     margin: 0 auto;
     padding-top: 80px;
 }
@@ -333,21 +334,21 @@ body, h1 {
 }
 
 .browser__img_pos-left {
-    width: 770px;
-    margin-right: -540px;
+    width: 65%;
+    margin-right: -50%;
     position: relative;
     z-index: 1;
 }
 
 .browser__img_pos-center {
-    width: 770px;
+    width: 65%;
     position: relative;
     z-index: 2;
 }
 
 .browser__img_pos-right {
-    width: 770px;
-    margin-left: -540px;
+    width: 65%;
+    margin-left: -50%;
     position: relative;
     z-index: 1;
 }
@@ -577,12 +578,13 @@ body, h1 {
 .result__section {
     min-height: 300px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
 .result__item {
-    margin: 0 35px;
+    margin: 10px 20px;
     flex-basis: 155px;
     text-align: center;
     position: relative;
@@ -619,6 +621,7 @@ body, h1 {
     background: #362f2d url('../img/bg1.jpg') center no-repeat;
     background-size: cover; 
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
