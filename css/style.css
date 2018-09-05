@@ -223,6 +223,10 @@ body, h1 {
     top: calc(50% - 30px);
 }
 
+.slider__arow_position-left:hover::before {
+    border-color: #a7936d;
+}
+
 .slider__arow_position-right {
     right: 10px;
     top: 50%;
