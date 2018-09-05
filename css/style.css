@@ -129,6 +129,7 @@ body, h1 {
     align-self: center;
     position: relative;
     text-align: center; /* нужно чтобы выравнить полоску меток */
+    max-width: 1179px;
 }
 
 .slider__container > input {
@@ -185,6 +186,46 @@ body, h1 {
     visibility: visible;
     opacity: 1;
     transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0s;
+}
+
+.slider__content + label,
+.slider__content + label + label {
+    
+    display: none;
+   
+} 
+
+.slider__container > input:checked + label + .slider__content + label, 
+.slider__container > input:checked + label + .slider__content + label + label {
+    display: inline-block;
+    width: 40px;
+    height: 83px;
+    cursor: pointer;
+    z-index: 100;
+    position: absolute;
+}
+
+.slider__arow_position-left {
+    left: 10px;
+    top: 50%;
+    position: relative;
+}  
+
+.slider__arow_position-left::before {
+    content: "";
+    border-top: 5px #a2a19f solid;
+    border-left: 5px #a2a19f solid;
+    width: 52px;
+    height: 52px;
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 10px;
+    top: calc(50% - 30px);
+}
+
+.slider__arow_position-right {
+    right: 10px;
+    top: 50%;
 }
 
 /* section__slider */
