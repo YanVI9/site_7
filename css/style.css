@@ -223,13 +223,27 @@ body, h1 {
     top: calc(50% - 30px);
 }
 
-.slider__arow_position-left:hover::before {
+.slider__arow_position-left:hover::before,
+.slider__arow_position-right:hover::before {
     border-color: #a7936d;
 }
 
 .slider__arow_position-right {
     right: 10px;
     top: 50%;
+    position: relative;
+}
+
+.slider__arow_position-right::before {
+    content: "";
+    border-top: 5px #a2a19f solid;
+    border-right: 5px #a2a19f solid;
+    width: 52px;
+    height: 52px;
+    position: absolute;
+    transform: rotate(45deg);
+    right: 10px;
+    top: calc(50% - 30px);
 }
 
 /* section__slider */
