@@ -346,33 +346,6 @@ body, h1 {
     text-transform: uppercase;
 }
 
-.slider__circlBlock {
-    min-width: 100px;
-    min-height: 55px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.circle {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    margin: 0 5px;
-}
-
-.circle_style-normal {
-    background-color: #8e8f91;
-    border: 0;
-    margin-top: 2px;
-}
-
-.circle_style-focus {
-    background-color: none;
-    border: 2px white solid;
-}
-
-
 /* servicesSection секция с услугами*/
 
 .services__section {
@@ -740,6 +713,34 @@ body, h1 {
     margin: 0;
     text-transform: uppercase;
 }  
+
+/* recernt slider2 */
+
+.slider2__container {
+    width: 1172px;
+    height: 460px;
+    border: 1px #000 dotted;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider2__container > input {
+    display: none;
+}
+
+.slider2__block {
+    position: absolute;
+    right: -100%;
+}
+
+.slider2__container > input:checked + label + .slider2__block {
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(139, 1, 1, 0.664);
+}
 
 /* clients */
 
