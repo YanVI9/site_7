@@ -1,0 +1,22 @@
+.post2__block {
+    width: 370px;
+}
+
+.post2__slider {
+    position: relative;
+    overflow: hidden;
+    height: 237px;
+}
+
+.post2__moveBlock {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 600%;
+    text-align: left;
+}
+
+.post2__imgBlock {
+    display: inline-block;
+}

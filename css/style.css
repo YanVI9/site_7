@@ -1,4 +1,6 @@
 /* */
+@import "post2__block.css" screen;
+
 @font-face {
     font-family: 'Montserrat Light';
     src: url('../fonts/Montserrat Light.ttf');
@@ -18,7 +20,6 @@
     font-family: 'Myriad Pro';
     src: url('../fonts/MyriadPro-Regular.ttf');
 }
-
 
 body, h1 {
     margin: 0;
@@ -719,7 +720,6 @@ body, h1 {
 .slider2__container {
     width: 1172px;
     height: 460px;
-    border: 1px #000 dotted;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
@@ -766,14 +766,17 @@ body, h1 {
     bottom: 0;
     right: 0;
     transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0.9s;
+    display: flex;  
 }
 
 .slider2__container > input:checked + label + label + div {
     opacity: 1;
     visibility: visible;
     position: absolute;
-    display: block;    
+      
 }
+
+
 
 
 
