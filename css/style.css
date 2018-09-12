@@ -760,18 +760,19 @@ body, h1 {
 .slider2__block {
     opacity: 0;
     visibility: hidden;
-    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0.9s;
 }
 
 .slider2__container > input:checked + label + label + div {
     opacity: 1;
     visibility: visible;
     position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+    display: block;    
 }
 
 
