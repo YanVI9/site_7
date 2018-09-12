@@ -740,21 +740,39 @@ body, h1 {
     position: relative;
     width: 20px;
     height: 20px;
+    line-height: 20px;
     border: 2px #e0e0e0 solid;
     border-radius: 50%;
     text-align: center;
-    font-size: 12px;
+    font-size: 14px;
     color: #e0e0e0;
     top: 90%;
     font-weight: bold;
     z-index: 10;
 }
 
-.slider2__container > label:hover {
+.slider2__container > input + label:hover,
+.slider2__container > input + label + label:hover {
     border: 2px #cab79f solid;
     color: #cab79f;
 }
 
+.slider2__block {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+}
+
+.slider2__container > input:checked + label + label + div {
+    opacity: 1;
+    visibility: visible;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
 
 
 
