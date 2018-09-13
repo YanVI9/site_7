@@ -48,6 +48,7 @@
     z-index: 10;
     border-radius: 50%;
     margin: 0 5px;
+    cursor: pointer;
 }
 
 .post2__slider > input:nth-of-type(2):checked ~ div.post2__moveBlock {left: -100%;}
@@ -86,3 +87,29 @@
     line-height: 30px;
     font-family: 'Roboto Regular';
 }
+
+.post2__textBlock {
+    border: 1px #f8f8f8 solid;
+    border-top: none;
+    padding: 30px 20px;
+    text-align: left;
+}
+
+.post2__textBlock h4 {
+    margin: 0;
+    font-size: 20px;
+    font-family: 'Raleway';
+    color: #555555;
+}
+
+.post2__textBlock p {
+    font-size: 14px;
+    color: #8c8c8c;
+}
+
+.post2__textBlock a {
+    color: #c7b299;
+    font-size: 14px;
+    text-decoration: none;
+}
+
