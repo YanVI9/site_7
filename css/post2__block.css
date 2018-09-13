@@ -16,10 +16,16 @@
     left: 0;
     width: 600%;
     text-align: left;
+    transition: left 1s ease-out 0.1s;
 }
 
 .post2__imgBlock {
-    display: inline-block;
+    display: inline-block;   
+}
+
+.post2__img {
+    max-width: 100%;
+    height: auto;
 }
 
 .post2__input {
@@ -43,4 +49,9 @@
     border-radius: 50%;
     margin: 0 5px;
 }
+
+.post2__slider > input:nth-of-type(2):checked ~ div.post2__moveBlock {left: -100%;}
+.post2__slider > input:nth-of-type(3):checked ~ div.post2__moveBlock {left: -200%;}
+.post2__slider > input:nth-of-type(4):checked ~ div.post2__moveBlock {left: -300%;}
+.post2__slider > input:nth-of-type(5):checked ~ div.post2__moveBlock {left: -400%;}
 
