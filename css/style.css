@@ -730,7 +730,7 @@ body, h1 {
     display: none;
 }
 
-.slider2__container label {
+.slider2__container > label {
     display: none;
 }
 

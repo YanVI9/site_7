@@ -6,6 +6,7 @@
     position: relative;
     overflow: hidden;
     height: 237px;
+    text-align: center;
 }
 
 .post2__moveBlock {
@@ -20,3 +21,26 @@
 .post2__imgBlock {
     display: inline-block;
 }
+
+.post2__input {
+    display: none;
+}
+
+.post2__input:checked + label {
+    background-color: transparent;
+    border: 2px #d1c0ac solid;
+    margin: 0 3px;
+}
+
+.post2__label {
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: relative;
+    top: 90%;
+    z-index: 10;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
