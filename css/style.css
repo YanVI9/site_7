@@ -21,6 +21,11 @@
     src: url('../fonts/MyriadPro-Regular.ttf');
 }
 
+@font-face {
+    font-family: 'Roboto Regular';
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+
 body, h1 {
     margin: 0;
     padding: 0;

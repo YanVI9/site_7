@@ -55,3 +55,34 @@
 .post2__slider > input:nth-of-type(4):checked ~ div.post2__moveBlock {left: -300%;}
 .post2__slider > input:nth-of-type(5):checked ~ div.post2__moveBlock {left: -400%;}
 
+.post2__dateBlock {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #252525;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+    text-align: center;
+    border-radius: 5px;
+    width: 50px;
+    height: 60px;
+    color: white;
+    overflow: hidden;
+}
+
+.post2__day {
+    background-color: #363636;
+    height: 30px;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.post2__month {
+    flex-grow: 1;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+    font-family: 'Roboto Regular';
+}
