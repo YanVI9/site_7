@@ -1,5 +1,6 @@
 .post2__block {
     width: 370px;
+    position: relative;
 }
 
 .post2__slider {
@@ -7,6 +8,7 @@
     overflow: hidden;
     height: 237px;
     text-align: center;
+    z-index: 3;
 }
 
 .post2__moveBlock {
@@ -71,6 +73,7 @@
     height: 60px;
     color: white;
     overflow: hidden;
+    z-index: 4;
 }
 
 .post2__day {
@@ -93,6 +96,8 @@
     border-top: none;
     padding: 30px 20px;
     text-align: left;
+    position: relative;
+    z-index: 2;
 }
 
 .post2__textBlock h4 {
@@ -100,16 +105,42 @@
     font-size: 20px;
     font-family: 'Raleway';
     color: #555555;
+    transition: color 2s linear 0.1s;
 }
 
 .post2__textBlock p {
     font-size: 14px;
     color: #8c8c8c;
+    transition: color 2s linear 0.1s;
 }
 
 .post2__textBlock a {
     color: #c7b299;
     font-size: 14px;
     text-decoration: none;
+}
+
+.post2__darkenBlock {
+    position: absolute;
+    top: 0;
+    bottom: 55px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #362f2d;
+    opacity: 0;
+    transition: opacity 2s linear 0.1s;
+}
+
+.post2__block:hover .post2__textBlock h4 {
+    color: #bda992;
+}
+
+.post2__block:hover .post2__textBlock p {
+    color: white;
+}
+
+.post2__block:hover .post2__darkenBlock {
+    opacity: 1;
 }
 
