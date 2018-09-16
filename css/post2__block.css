@@ -1,6 +1,7 @@
 .post2__block {
     width: 370px;
     position: relative;
+    margin: 0 5px;
 }
 
 .post2__slider {
@@ -8,7 +9,7 @@
     overflow: hidden;
     height: 237px;
     text-align: center;
-    z-index: 3;
+    
 }
 
 .post2__moveBlock {
@@ -19,6 +20,7 @@
     width: 600%;
     text-align: left;
     transition: left 1s ease-out 0.1s;
+    z-index: 3;
 }
 
 .post2__imgBlock {
@@ -105,13 +107,13 @@
     font-size: 20px;
     font-family: 'Raleway';
     color: #555555;
-    transition: color 2s linear 0.1s;
+    transition: color 0.5 linear 0.1s;
 }
 
 .post2__textBlock p {
     font-size: 14px;
     color: #8c8c8c;
-    transition: color 2s linear 0.1s;
+    transition: color 0.5s linear 0.1s;
 }
 
 .post2__textBlock a {
@@ -129,7 +131,7 @@
     z-index: 1;
     background-color: #362f2d;
     opacity: 0;
-    transition: opacity 2s linear 0.1s;
+    transition: opacity 0.5s linear 0.1s;
 }
 
 .post2__block:hover .post2__textBlock h4 {
@@ -141,6 +143,6 @@
 }
 
 .post2__block:hover .post2__darkenBlock {
-    opacity: 1;
+    opacity: .7;
 }
 
