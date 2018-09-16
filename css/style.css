@@ -1,6 +1,5 @@
 /* */
 @import "post2__block.css" screen;
-@import "gam.css" screen;
 
 @font-face {
     font-family: 'Montserrat Light';
@@ -97,22 +96,6 @@ body, h1 {
     cursor: pointer;
 }
 
-@media screen and (max-width: 830px) {
-    .container {}
-    
-    .header {
-        flex-direction: column;
-        flex-wrap: nowrap;
-    }
-
-    .header__navigation {
-        position: absolute;
-        flex-direction: column;
-        align-items: center;
-        display: none;
-    }
-}
-
 /* section */
 
 .section_w-100 {
@@ -124,14 +107,12 @@ body, h1 {
     text-align: center;
     margin: 0 auto;
     margin-bottom: 30px; 
-    padding: 0 15px;
 }
 
 .section__text {
     max-width: 770px;
     text-align: center;
     margin: 0 auto 42px auto;
-    padding: 0 15px;
 }
 
 .section_bckg-gradient {
@@ -145,8 +126,6 @@ body, h1 {
 .section_bckg-grey {
     background-color: #fbfaf8;
 }
-
-
 
 /* slider */
 
@@ -371,7 +350,6 @@ body, h1 {
     font-size: 14px;
     border-bottom: 3px #736357 solid;
     text-transform: uppercase;
-    margin-left: 15px;
 }
 
 /* servicesSection секция с услугами*/
@@ -379,14 +357,13 @@ body, h1 {
 .services__section {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center; /* размещение элементов по центру */
     align-items: stretch; /* дочерние элементы на всю высоту блока - необходимо для выравнивания д.элементов */
     padding: 80px 0 75px 0; /* Верхний и нижний отступы */
 }
 
 .services__item {
-    flex-basis: 270px; /* базовая ширина блока */
+    flex-basis: 280px; /* базовая ширина блока */
     text-align: center; /* выравниваем текст по центру */
     margin: 0 17px; /* задаем отступы слева и справа */
     position: relative; /* необходим для задания абсолютного позиционирования у д.элемента */
@@ -490,19 +467,7 @@ body, h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 48px 15px;
-}
-
-@media screen and (max-width: 710px) {
-    .rating__container {
-        flex-wrap: wrap;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .button {
-        margin-top: 15px;
-    }
+    padding: 48px 0;
 }
 
 .rating__header {
@@ -660,13 +625,11 @@ body, h1 {
     font-size: 30px;
     font-family: 'Myriad Pro';
     font-weight: 400;
-    padding: 0 15px;
 }
 
 .presentation__text {
     font-size: 16px;
     line-height: 28px;
-    padding: 0 15px;
 }
 
 .presentation__time {
@@ -694,35 +657,16 @@ body, h1 {
     padding-right: 20px;
 }
 
-@media screen and (max-width: 1066px) {
-    .mobileDevice {
-        justify-content: stretch;
-        align-items: stretch;
-        max-height: auto;
-        background-size: contain; 
-    }
-    
-    .mobileDevice__textbox {
-        flex-basis: auto;
-        background-color: rgba(255,255,255, .9);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-}
-
 .mobileDevice__caption {
     font-size: 30px;
     font-family: 'Raleway';
     font-weight: 800;
-    padding: 0 15px;
 }
 
 .mobileDevice__text {
     text-align: justify;
     line-height: 28px;
     font-size: 16px;
-    padding: 0 15px;
 }
 
 .mobileDevice__list {
