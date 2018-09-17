@@ -539,6 +539,17 @@ body, h1 {
     border-color:  #998675;
 }
 
+@media screen and (max-width: 706px) {
+    .filter__block {
+        flex-direction: column;
+    }
+
+    .filter__item {
+        min-width: 300px;
+        margin-top: 15px;
+    }
+}
+
 /* project */
 
 .project__section {
@@ -827,7 +838,14 @@ body, h1 {
     bottom: 0;
     right: 0;
     transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0.9s;
-    display: flex;  
+    display: flex; 
+     
+}
+
+@media screen and (max-width: 1142px) {
+    .slider2__container {
+        display: none;
+    }
 }
 
 .slider2__container > input:checked + label + label + div {

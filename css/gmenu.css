@@ -1,0 +1,47 @@
+.gmenu__block {
+    background-color: rgba(250, 156, 19, 1);
+    position: relative;
+    text-align: center;
+}
+
+#gmenu__trigger {
+    display: none;
+}
+
+.gmenu__label {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background-image: url("../img/gamburger-menu.png");
+    background-size: 35px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.5s linear 0s;
+    border-radius: 50% 50% 0 0;
+}
+
+.gmenu__nav {
+    display: none;
+    background-color: transparent;
+    opacity: 0;
+    transition: opacity 0.5s linear 2s;
+}
+
+#gmenu__trigger:checked ~ .gmenu__label {
+    background-image: url("../img/gamburger-menu-black.png");
+    
+    background-color: rgba(218, 194, 172, 0.5);   
+}
+
+#gmenu__trigger:checked ~ .gmenu__nav {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    left: calc(50% - 150px);
+    width: 300px;
+    align-items: center;
+    opacity: 1;
+    background-color: rgba(218, 194, 172, 0.5); 
+}
